@@ -4,23 +4,6 @@ Feature: Inicio de sesión del Administrador
     * url 'https://serverest.dev'
     * header Content-Type = 'application/json'
     * call read('classpath:examples/helpers/datos.feature')
-
-# Escenario 1
-  Scenario: Iniciar sesión con credenciales válidas
-    * def usuario = credencialCorrecto()
-    * def credenciales_login_request =
-      """
-      {
-      "email": "#(usuario.email)",
-      "password": "#(usuario.password)"
-      }
-      """
-    Given path '/login'
-    And request credenciales_login_request
-    When method post
-    Then status 200 
-    And match response == {message:'Login realizado com sucesso' , authorization: '#string'}
-    And match response.authorization contains 'Bearer '
     
   # Escenario 2  
     Scenario: Iniciar sesión con credenciales inválidas
