@@ -1,0 +1,2711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="7.612" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master\target\test-classes;C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master\target\classes;C:\Users\user\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\user\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\user\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\user\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\user\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\user\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\user\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\user\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\user\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\user\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\user\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\user\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\user\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\user\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\user\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\user\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\user\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\user\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\user\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\user\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\user\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\user\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire3619839304017635017\surefirebooter-20250703001355768_3.jar C:\Users\user\AppData\Local\Temp\surefire3619839304017635017 2025-07-03T00-13-55_592-jvmRun1 surefire-20250703001355768_1tmp surefire_0-20250703001355768_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master\target\test-classes;C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master\target\classes;C:\Users\user\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\user\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\user\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\user\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\user\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\user\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\user\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\user\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\user\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\user\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\user\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\user\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\user\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\user\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\user\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\user\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\user\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\user\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\user\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\user\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\user\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\user\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\user\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire3619839304017635017\surefirebooter-20250703001355768_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="user"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\user\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\user\Downloads\reto_qa_back-master\reto_qa_back-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Apache\Maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python312\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\user\AppData\Local\Programs\Azure Data Studio\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\user\AppData\Roaming\npm;;c:\Users\user\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="7.588">
+    <failure message="status code was: 401, expected: 200, response time in milliseconds: 575, url: https://serverest.dev/login, response: &#10;{&#10;    &quot;message&quot;: &quot;Email e/ou senha inválidos&quot;&#10;}&#10;classpath:examples/users/01_login_post.feature:21&#10;match failed: EQUALS&#10;  $ | not equal | match failed for name: &apos;message&apos; (MAP:MAP)&#10;  {&quot;message&quot;:&quot;Nenhum registro excluído&quot;}&#10;  {&quot;message&quot;:&quot;Registro excluído com sucesso&quot;}&#10;&#10;    $.message | not equal (STRING:STRING)&#10;    &apos;Nenhum registro excluído&apos;&#10;    &apos;Registro excluído com sucesso&apos;&#10;&#10;classpath:examples/users/05_usuarios_delete.feature:21&#10;status code was: 200, expected: 400, response time in milliseconds: 951, url: https://serverest.dev/usuarios/LTJ8oqnxDDNZQ3VJ, response: &#10;{&#10;    &quot;message&quot;: &quot;Nenhum registro excluído&quot;&#10;}&#10;classpath:examples/users/05_usuarios_delete.feature:43 ==&gt; expected: &lt;0&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 575, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+classpath:examples/users/01_login_post.feature:21
+match failed: EQUALS
+  $ | not equal | match failed for name: 'message' (MAP:MAP)
+  {"message":"Nenhum registro excluído"}
+  {"message":"Registro excluído com sucesso"}
+
+    $.message | not equal (STRING:STRING)
+    'Nenhum registro excluído'
+    'Registro excluído com sucesso'
+
+classpath:examples/users/05_usuarios_delete.feature:21
+status code was: 200, expected: 400, response time in milliseconds: 951, url: https://serverest.dev/usuarios/LTJ8oqnxDDNZQ3VJ, response: 
+{
+    "message": "Nenhum registro excluído"
+}
+classpath:examples/users/05_usuarios_delete.feature:43 ==> expected: <0> but was: <3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[00:13:57.221 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:13:57.223 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+00:13:58.247 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:58.247 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:58.247 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:58.247 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:58.247 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:58.580 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 44
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"cr@gmail.com","password":"123456"}
+
+00:13:58.580 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"prueba","password":"teste"}
+
+00:13:58.580 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 26
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"","password":""}
+
+00:13:58.580 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:13:58.580 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 54
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"email":"alfredtest@qa.com","password":"alfred#7456"}
+
+00:13:59.139 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 559
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 4250b8f91adbfb4e053ab4ac40853923
+1 < date: Thu, 03 Jul 2025 05:13:58 GMT
+1 < server: Google Frontend
+1 < Content-Length: 50
+{
+    "email": "email deve ser um email válido"
+}
+
+00:13:59.155 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 401
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: ce6fd73e7f757de9af3989189503528a;o=1
+1 < date: Thu, 03 Jul 2025 05:13:58 GMT
+1 < server: Google Frontend
+1 < Content-Length: 48
+{
+    "message": "Email e/ou senha inválidos"
+}
+
+00:13:59.155 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 575
+1 < 401
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: fdc8816b4d62c4355e3b6a37b99b3ba6
+1 < date: Thu, 03 Jul 2025 05:13:58 GMT
+1 < server: Google Frontend
+1 < Content-Length: 48
+{
+    "message": "Email e/ou senha inválidos"
+}
+
+00:13:59.169 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/01_login_post.feature:21
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 575, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+classpath:examples/users/01_login_post.feature:21
+00:13:59.169 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:59.169 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:59.169 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:59.180 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.180 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.180 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.562 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 982
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 86f4815d617dfeb4e5306c63b08310c0
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 104
+{
+    "email": "email não pode ficar em branco",
+    "password": "password não pode ficar em branco"
+}
+
+00:13:59.572 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 981
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: bc15f5ed9d7b40de0bd2d2f289379e5b
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:13:59.578 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:13:59.578 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.583 [pool-2-thread-5] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:13:59.583 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > GET https://serverest.dev/usuarios
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.583 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 403
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: a54d8cbe0364266a995216e210ea1ab0
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:13:59.583 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 403
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: c602f9a615d6b36d301f2403e0ef4a6d
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:13:59.583 [pool-2-thread-2] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:13:59.593 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://serverest.dev/usuarios?administrador=false
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.593 [pool-2-thread-4] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:13:59.593 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > GET https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:13:59.600 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 420
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 67a40308127a31be2e39edd7d1b1e085
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:13:59.604 [pool-2-thread-1] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:13:59.609 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://serverest.dev/usuarios/0uxuPY0cbmAhpEz1
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:14:00.000 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 413
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 3433b4dca29bd6600b8fac88c11b7d47
+1 < date: Thu, 03 Jul 2025 05:13:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:00.003 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 407
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: a6f1c1034b1470975707833002a15488
+2 < date: Thu, 03 Jul 2025 05:13:59 GMT
+2 < server: Google Frontend
+2 < Content-Length: 2792
+{
+    "quantidade": 12,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:00.004 [pool-2-thread-3] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:00.006 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://serverest.dev/usuarios/AABAAuP48cbmAhpEz1
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:14:00.011 [pool-2-thread-2] INFO  com.intuit.karate - [print] Usuarios no son administrador: [
+  {
+    "nome": "Alfred1751519523477",
+    "email": "alfred_1751519523477@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "0uxuPY0cbmQhpEz1"
+  },
+  {
+    "password": "teste1751516447660",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "usuario1751518960798@email.com",
+    "_id": "2wawD1ZaMuFq5HgG"
+  },
+  {
+    "password": "teste1751516822653",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516822652@hotmail.com",
+    "_id": "2xYflXtfu4LWgv1L"
+  },
+  {
+    "password": "teste1751515827418",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751515827418@hotmail.com",
+    "_id": "BwZDd9RwLbsAoLje"
+  },
+  {
+    "nome": "Alfred1751519523548",
+    "email": "alfred_1751519523548@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "E36HKOA3D5UKQClN"
+  },
+  {
+    "nome": "Alfred1751519522318",
+    "email": "alfred_1751519522318@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "JjcH4sI7dOm7lwUi"
+  },
+  {
+    "password": "teste1751516447660",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516447660@hotmail.com",
+    "_id": "OrkBXrQ27cenZRN9"
+  },
+  {
+    "password": "teste1751516118342",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516118342@hotmail.com",
+    "_id": "dQ8YIU4UK6breDHI"
+  },
+  {
+    "password": "teste1751515941468",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751515941468@hotmail.com",
+    "_id": "q2hQciO8CIcvX4Oc"
+  },
+  {
+    "password": "teste1751516709652",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516709652@hotmail.com",
+    "_id": "t2y8xI4OHxYL82xm"
+  },
+  {
+    "password": "teste1751516769085",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516769084@hotmail.com",
+    "_id": "vo1jpvVgNFojp9fJ"
+  },
+  {
+    "password": "teste1751516013638",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516013636@hotmail.com",
+    "_id": "w1rNEAePlvY6q1CH"
+  }
+]
+ 
+00:14:00.019 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.025 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 414
+2 < 400
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 1e40633147ca487c4bc481588d800370
+2 < date: Thu, 03 Jul 2025 05:13:59 GMT
+2 < server: Google Frontend
+2 < Content-Length: 45
+{
+    "message": "Usuário não encontrado"
+}
+
+00:14:00.033 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.049 [pool-2-thread-1] INFO  com.intuit.karate - [print] Usuario generado: {
+  "nome": "Alfred1751519640043",
+  "email": "alfred_1751519640043@gmail.com",
+  "password": "123456",
+  "administrador": "false"
+}
+ 
+00:14:00.049 [pool-2-thread-2] INFO  com.intuit.karate - [print] Usuario generado: {
+  "nome": "Alfred1751519640035",
+  "email": "alfred_1751519640035@gmail.com",
+  "password": "123456",
+  "administrador": "false"
+}
+ 
+00:14:00.052 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519640043","email":"beltrano@qa.com.br","password":"123456","administrador":"false"}
+
+00:14:00.054 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 115
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519640035","email":"alfred_1751519640035@gmail.com","password":"123456","administrador":"false"}
+
+00:14:00.413 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 401
+2 < 400
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 771bfe847047009935f0c414c9701edd
+2 < date: Thu, 03 Jul 2025 05:14:00 GMT
+2 < server: Google Frontend
+2 < Content-Length: 67
+{
+    "id": "id deve ter exatamente 16 caracteres alfanuméricos"
+}
+
+00:14:00.422 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.432 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 55
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"","email":"","password":"","administrador":""}
+
+00:14:00.452 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 400
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 00897820628d115e52b1924e52ca674a
+1 < date: Thu, 03 Jul 2025 05:14:00 GMT
+1 < server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+---------------------------------------------------------
+feature: classpath:examples/users/01_login_post.feature
+scenarios:  4 | passed:  3 | failed:  1 | time: 3.8746
+---------------------------------------------------------
+
+00:14:00.458 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.458 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 6 (4 remaining) classpath:examples/users/01_login_post.feature
+00:14:00.468 [pool-2-thread-1] INFO  com.intuit.karate - [print] Usuario generado: {
+  "nome": "Alfred1751519640466",
+  "email": "alfred_1751519640466@gmail.com",
+  "password": "123456",
+  "administrador": "false"
+}
+ 
+00:14:00.473 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 100
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519640466","email":"beltranoasd.com","password":"123456","administrador":"false"}
+
+00:14:00.541 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 958
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 543a73b334b34cf7aab2093372456e8d
+2 < date: Thu, 03 Jul 2025 05:14:00 GMT
+2 < server: Google Frontend
+2 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:00.541 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 941
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 0714d178e8d543fd0d08643a668a01b9
+2 < date: Thu, 03 Jul 2025 05:14:00 GMT
+2 < server: Google Frontend
+2 < Content-Length: 171
+{
+    "nome": "Alfred1751519523477",
+    "email": "alfred_1751519523477@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "0uxuPY0cbmQhpEz1"
+}
+
+00:14:00.541 [pool-2-thread-4] INFO  com.intuit.karate - [print] Usuario:  {
+  "nome": "Alfred1751519523477",
+  "email": "alfred_1751519523477@gmail.com",
+  "password": "123456",
+  "administrador": "false",
+  "_id": "0uxuPY0cbmQhpEz1"
+}
+ 
+00:14:00.541 [pool-2-thread-5] INFO  com.intuit.karate - [print] Lista_usuarios: [
+  {
+    "nome": "Alfred1751519523477",
+    "email": "alfred_1751519523477@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "0uxuPY0cbmQhpEz1"
+  },
+  {
+    "password": "teste1751516447660",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "usuario1751518960798@email.com",
+    "_id": "2wawD1ZaMuFq5HgG"
+  },
+  {
+    "password": "teste1751516822653",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516822652@hotmail.com",
+    "_id": "2xYflXtfu4LWgv1L"
+  },
+  {
+    "password": "teste1751515827418",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751515827418@hotmail.com",
+    "_id": "BwZDd9RwLbsAoLje"
+  },
+  {
+    "nome": "Alfred1751519523548",
+    "email": "alfred_1751519523548@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "E36HKOA3D5UKQClN"
+  },
+  {
+    "nome": "Fulano da Silva",
+    "email": "beltrano@qa.com.br",
+    "password": "teste",
+    "administrador": "true",
+    "_id": "HPIOXQBtl794MTKb"
+  },
+  {
+    "password": "123456",
+    "administrador": "true",
+    "nome": "Teste User",
+    "email": "test1751515743419@email.com",
+    "_id": "I2Qnv5rfo4pYmzMK"
+  },
+  {
+    "nome": "Alfred1751519522318",
+    "email": "alfred_1751519522318@gmail.com",
+    "password": "123456",
+    "administrador": "false",
+    "_id": "JjcH4sI7dOm7lwUi"
+  },
+  {
+    "password": "123456",
+    "administrador": "true",
+    "nome": "Teste User",
+    "email": "test1751518953259@email.com",
+    "_id": "Jm7mtmI2pASGK5u8"
+  },
+  {
+    "password": "teste1751516447660",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516447660@hotmail.com",
+    "_id": "OrkBXrQ27cenZRN9"
+  },
+  {
+    "password": "teste1751516118342",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516118342@hotmail.com",
+    "_id": "dQ8YIU4UK6breDHI"
+  },
+  {
+    "password": "teste1751515941468",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751515941468@hotmail.com",
+    "_id": "q2hQciO8CIcvX4Oc"
+  },
+  {
+    "password": "teste1751516709652",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516709652@hotmail.com",
+    "_id": "t2y8xI4OHxYL82xm"
+  },
+  {
+    "password": "teste1751516769085",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516769084@hotmail.com",
+    "_id": "vo1jpvVgNFojp9fJ"
+  },
+  {
+    "password": "teste1751516013638",
+    "administrador": "false",
+    "nome": "Rebeca post",
+    "email": "1751516013636@hotmail.com",
+    "_id": "w1rNEAePlvY6q1CH"
+  }
+]
+ 
+00:14:00.557 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.557 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.564 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:14:00.564 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:examples/users/02_usuarios_get.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 6.1419
+---------------------------------------------------------
+
+00:14:00.722 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:examples/users/02_usuarios_get.feature
+00:14:00.872 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 398
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 73330245a8f9d0583fa833867ad3663e
+1 < date: Thu, 03 Jul 2025 05:14:00 GMT
+1 < server: Google Frontend
+1 < Content-Length: 50
+{
+    "email": "email deve ser um email válido"
+}
+
+00:14:00.876 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:00.896 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:14:00.964 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 400
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: d8701543b28e98d3f685983698ba96aa
+1 < date: Thu, 03 Jul 2025 05:14:00 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3435
+{
+    "quantidade": 15,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:00.973 [pool-2-thread-4] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:00.973 [pool-2-thread-4] INFO  com.intuit.karate - [print] Datos de usuario: {
+  "nome": "Alfred1751519640973",
+  "email": "alfred_1751519640973@gmail.com",
+  "password": "123456",
+  "administrador": "false"
+}
+ 
+00:14:00.973 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > PUT https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 115
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519640973","email":"alfred_1751519640973@gmail.com","password":"123456","administrador":"false"}
+
+00:14:01.026 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 971
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 6224b7d2f976f0ea361978264b3bf8a4
+1 < date: Thu, 03 Jul 2025 05:14:00 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "cgqmsYTZFUccu5xw"
+}
+
+00:14:01.029 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:01.035 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:14:01.283 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 73ee4217feaa037544039702a5a47628
+1 < date: Thu, 03 Jul 2025 05:14:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3664
+{
+    "quantidade": 16,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "nome": "Alfred1751519640035",
+            "email": "alfred_1751519640035@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "cgqmsYTZFUccu5xw"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:01.299 [pool-2-thread-1] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:01.299 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > PUT https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 103
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519641299","email":"beltrano@qa.com.br","password":"123456","administrador":"false"}
+
+00:14:01.389 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 953
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 6b43bcc8330a3a4d09a619d5885a6e5e
+1 < date: Thu, 03 Jul 2025 05:14:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 215
+{
+    "nome": "nome não pode ficar em branco",
+    "email": "email não pode ficar em branco",
+    "password": "password não pode ficar em branco",
+    "administrador": "administrador deve ser 'true' ou 'false'"
+}
+
+00:14:01.391 [pool-2-thread-3] INFO  com.intuit.karate - [print] La respuesta es {
+  "nome": "nome não pode ficar em branco",
+  "email": "email não pode ficar em branco",
+  "password": "password não pode ficar em branco",
+  "administrador": "administrador deve ser 'true' ou 'false'"
+}
+ 
+00:14:01.396 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:01.405 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:14:01.521 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 956
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: a5cd53910dbee983bc8abf32dd6c18f7
+1 < date: Thu, 03 Jul 2025 05:14:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3664
+{
+    "quantidade": 16,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519523477",
+            "email": "alfred_1751519523477@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "nome": "Alfred1751519640035",
+            "email": "alfred_1751519640035@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "cgqmsYTZFUccu5xw"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:01.525 [pool-2-thread-5] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:01.527 [pool-2-thread-5] INFO  com.intuit.karate - [print] Datos de usuario: {
+  "nome": "Alfred1751519641526",
+  "email": "alfred_1751519641526@gmail.com",
+  "password": "123456",
+  "administrador": "false"
+}
+ 
+00:14:01.538 [pool-2-thread-5] INFO  com.intuit.karate - [print] id aleatorio: 5TuQuxn0z3fXgDu2 
+00:14:01.542 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > PUT https://serverest.dev/usuarios/5TuQuxn0z3fXgDu2
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 115
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"nome":"Alfred1751519641526","email":"alfred_1751519641526@gmail.com","password":"123456","administrador":"false"}
+
+---------------------------------------------------------
+feature: classpath:examples/users/03_usuarios_post.feature
+scenarios:  4 | passed:  4 | failed:  0 | time: 2.8095
+---------------------------------------------------------
+
+00:14:01.666 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:examples/users/03_usuarios_post.feature
+00:14:01.695 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 396
+2 < 400
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: e545baf03952d998f43f682528917ccf
+2 < date: Thu, 03 Jul 2025 05:14:01 GMT
+2 < server: Google Frontend
+2 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+00:14:01.699 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:14:01.710 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Content-Type: application/json
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:14:01.938 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 965
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 21c6d7afb36f4aa304a10a3113ccee9f
+2 < date: Thu, 03 Jul 2025 05:14:01 GMT
+2 < server: Google Frontend
+2 < Content-Length: 50
+{
+    "message": "Registro alterado com sucesso"
+}
+
+00:14:01.944 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 402
+2 < 201
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 3ecc04dc6c8a537caab0286c963a775d
+2 < date: Thu, 03 Jul 2025 05:14:01 GMT
+2 < server: Google Frontend
+2 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "E5kMIAuCUPILjbiw"
+}
+
+00:14:01.990 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 954
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 562981c39e854a2fb319c7f702c9eae2
+1 < date: Thu, 03 Jul 2025 05:14:01 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3893
+{
+    "quantidade": 17,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519640973",
+            "email": "alfred_1751519640973@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Alfred1751519641526",
+            "email": "alfred_1751519641526@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E5kMIAuCUPILjbiw"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "nome": "Alfred1751519640035",
+            "email": "alfred_1751519640035@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "cgqmsYTZFUccu5xw"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:01.990 [pool-2-thread-2] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:01.996 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > DELETE https://serverest.dev/usuarios/tYGWqr80MVlifjNI
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:examples/users/04_usuarios_put.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 3.5825
+---------------------------------------------------------
+
+00:14:02.136 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:examples/users/04_usuarios_put.feature
+00:14:02.370 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 965
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 188d08f7a0795071890a4afffbc290c3
+1 < date: Thu, 03 Jul 2025 05:14:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3893
+{
+    "quantidade": 17,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519640973",
+            "email": "alfred_1751519640973@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Alfred1751519641526",
+            "email": "alfred_1751519641526@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E5kMIAuCUPILjbiw"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "nome": "Alfred1751519640035",
+            "email": "alfred_1751519640035@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "cgqmsYTZFUccu5xw"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:02.374 [pool-2-thread-3] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:02.374 [pool-2-thread-3] INFO  com.intuit.karate - [print] Id aleatorio: MT5kBIATCJlBAX1o 
+00:14:02.376 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > DELETE https://serverest.dev/usuarios/WWWeAuShq3JnhSF5sdsds
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:14:02.384 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 388
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 088310c756ed1319cf9f1171bcf65a3b
+2 < date: Thu, 03 Jul 2025 05:14:02 GMT
+2 < server: Google Frontend
+2 < Content-Length: 46
+{
+    "message": "Nenhum registro excluído"
+}
+
+00:14:02.384 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/users/05_usuarios_delete.feature:21
+And match response == { message: 'Registro excluído com sucesso'}
+match failed: EQUALS
+  $ | not equal | match failed for name: 'message' (MAP:MAP)
+  {"message":"Nenhum registro excluído"}
+  {"message":"Registro excluído com sucesso"}
+
+    $.message | not equal (STRING:STRING)
+    'Nenhum registro excluído'
+    'Registro excluído com sucesso'
+
+classpath:examples/users/05_usuarios_delete.feature:21
+00:14:02.664 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 954
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 4db97952046226a07820896d67c5b88a
+1 < date: Thu, 03 Jul 2025 05:14:02 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3893
+{
+    "quantidade": 17,
+    "usuarios": [
+        {
+            "nome": "Alfred1751519640973",
+            "email": "alfred_1751519640973@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "usuario1751518960798@email.com",
+            "_id": "2wawD1ZaMuFq5HgG"
+        },
+        {
+            "password": "teste1751516822653",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516822652@hotmail.com",
+            "_id": "2xYflXtfu4LWgv1L"
+        },
+        {
+            "password": "teste1751515827418",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515827418@hotmail.com",
+            "_id": "BwZDd9RwLbsAoLje"
+        },
+        {
+            "nome": "Alfred1751519523548",
+            "email": "alfred_1751519523548@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E36HKOA3D5UKQClN"
+        },
+        {
+            "nome": "Alfred1751519641526",
+            "email": "alfred_1751519641526@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "E5kMIAuCUPILjbiw"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "HPIOXQBtl794MTKb"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751515743419@email.com",
+            "_id": "I2Qnv5rfo4pYmzMK"
+        },
+        {
+            "nome": "Alfred1751519522318",
+            "email": "alfred_1751519522318@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "JjcH4sI7dOm7lwUi"
+        },
+        {
+            "password": "123456",
+            "administrador": "true",
+            "nome": "Teste User",
+            "email": "test1751518953259@email.com",
+            "_id": "Jm7mtmI2pASGK5u8"
+        },
+        {
+            "password": "teste1751516447660",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516447660@hotmail.com",
+            "_id": "OrkBXrQ27cenZRN9"
+        },
+        {
+            "nome": "Alfred1751519640035",
+            "email": "alfred_1751519640035@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "cgqmsYTZFUccu5xw"
+        },
+        {
+            "password": "teste1751516118342",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516118342@hotmail.com",
+            "_id": "dQ8YIU4UK6breDHI"
+        },
+        {
+            "password": "teste1751515941468",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751515941468@hotmail.com",
+            "_id": "q2hQciO8CIcvX4Oc"
+        },
+        {
+            "password": "teste1751516709652",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516709652@hotmail.com",
+            "_id": "t2y8xI4OHxYL82xm"
+        },
+        {
+            "password": "teste1751516769085",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516769084@hotmail.com",
+            "_id": "vo1jpvVgNFojp9fJ"
+        },
+        {
+            "password": "teste1751516013638",
+            "administrador": "false",
+            "nome": "Rebeca post",
+            "email": "1751516013636@hotmail.com",
+            "_id": "w1rNEAePlvY6q1CH"
+        }
+    ]
+}
+
+00:14:02.668 [pool-2-thread-1] INFO  com.intuit.karate - [print] id_primer_usuario (Background): 0uxuPY0cbmQhpEz1 
+00:14:02.670 [pool-2-thread-1] INFO  com.intuit.karate - [print] Id aleatorio: LTJ8oqnxDDNZQ3VJ 
+00:14:02.672 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > DELETE https://serverest.dev/usuarios/LTJ8oqnxDDNZQ3VJ
+2 > Host: serverest.dev
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:14:02.775 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 399
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: b6ce2f373b402fa9fe74476776cc7dc5
+2 < date: Thu, 03 Jul 2025 05:14:02 GMT
+2 < server: Google Frontend
+2 < Content-Length: 46
+{
+    "message": "Nenhum registro excluído"
+}
+
+00:14:03.623 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 951
+2 < 200
+2 < access-control-allow-origin: *
+2 < x-dns-prefetch-control: off
+2 < x-frame-options: SAMEORIGIN
+2 < strict-transport-security: max-age=15552000; includeSubDomains
+2 < x-download-options: noopen
+2 < x-content-type-options: nosniff
+2 < x-xss-protection: 1; mode=block
+2 < content-type: application/json; charset=utf-8
+2 < x-cloud-trace-context: 5da59323a4e94b1d7b60d3d558eabe0e
+2 < date: Thu, 03 Jul 2025 05:14:03 GMT
+2 < server: Google Frontend
+2 < Content-Length: 46
+{
+    "message": "Nenhum registro excluído"
+}
+
+00:14:03.623 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/users/05_usuarios_delete.feature:43
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 951, url: https://serverest.dev/usuarios/LTJ8oqnxDDNZQ3VJ, response: 
+{
+    "message": "Nenhum registro excluído"
+}
+classpath:examples/users/05_usuarios_delete.feature:43
+---------------------------------------------------------
+feature: classpath:examples/users/05_usuarios_delete.feature
+scenarios:  3 | passed:  1 | failed:  2 | time: 4.6638
+---------------------------------------------------------
+
+00:14:03.688 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 6 (0 remaining) classpath:examples/users/05_usuarios_delete.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   7.12 | threads:    5 | thread time: 21.07 
+features:     5 | skipped:    1 | efficiency: 0.59
+scenarios:   19 | passed:    16 | failed: 3
+======================================================
+>>> failed features:
+status code was: 401, expected: 200, response time in milliseconds: 575, url: https://serverest.dev/login, response: 
+{
+    "message": "Email e/ou senha inválidos"
+}
+classpath:examples/users/01_login_post.feature:21
+match failed: EQUALS
+  $ | not equal | match failed for name: 'message' (MAP:MAP)
+  {"message":"Nenhum registro excluído"}
+  {"message":"Registro excluído com sucesso"}
+
+    $.message | not equal (STRING:STRING)
+    'Nenhum registro excluído'
+    'Registro excluído com sucesso'
+
+classpath:examples/users/05_usuarios_delete.feature:21
+status code was: 200, expected: 400, response time in milliseconds: 951, url: https://serverest.dev/usuarios/LTJ8oqnxDDNZQ3VJ, response: 
+{
+    "message": "Nenhum registro excluído"
+}
+classpath:examples/users/05_usuarios_delete.feature:43
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/user/Downloads/reto_qa_back-master/reto_qa_back-master/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
