@@ -9,6 +9,7 @@ Feature: Listar todos los usuarios o usuario en especifico que estén registrado
     * def id_primer_usuario = response.usuarios[0]._id
     * print 'id_primer_usuario (Background):', id_primer_usuario
 
+    
 # Escenario 1
   Scenario: Listar usuarios exitosamente
     Given path '/usuarios'
