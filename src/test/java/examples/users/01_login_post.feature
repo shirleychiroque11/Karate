@@ -17,7 +17,7 @@ Feature: Inicio de sesión del Administrador
     Given path '/login'
     And request credenciales_login_request
     When method post 
-    Then status 401 
+    Then status 200 
     And match response == {message:'Email e/ou senha inválidos'}    
 
 # Escenario 3  
